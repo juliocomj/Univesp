@@ -1,0 +1,122 @@
+.logo_univesp{
+    height: 4rem;
+    width: 8rem;
+    }
+    
+body {
+    background: #BBBBBB;
+}
+
+h2{
+    font-family: "Barlow", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h2:hover{
+    cursor: pointer;
+}
+
+.btn_blue{
+    font-family: "Open Sans", sans-serif;
+    font-size: small;
+    margin: auto;
+    padding: 0.5rem;
+    border-width: thin;
+    background-color: #2168b2;
+    color: white;
+    border-radius: 0.2rem;
+    border-color: #2d6caf;
+    text-decoration: none
+}
+
+.btn_blue:hover{
+    background-color: #b22122;
+    border-color: #ffffff;
+    cursor: pointer;
+}
+
+.btn_green{
+    font-family: "Open Sans", sans-serif;
+    padding: 0.7rem;
+    border-width: thin;
+    background-color: #1e7c1e;
+    color: white;
+    border-radius: 0.2rem;
+    border-color: #0f770f;
+    width: 8rem;
+}
+
+.btn_green:hover{
+    background-color: #0f770f;
+    border-color: #ffffff;
+    cursor: pointer;
+    
+}
+
+.principal{
+    background-color: white;
+    margin: 0 2rem;
+    height: min-content;
+    position: relative;
+    top: 1.8rem;
+
+}
+
+.select{
+    font-family: "Open Sans", sans-serif;
+    padding: 2rem 0rem 2rem 2rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+select{
+    width: min-content;
+    padding: 0.2rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    background-color: white;
+    padding: 20px 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%; /* Alterado para ocupar 100% da largura */
+    max-width: 940px; /* Adicionado limite de largura */
+    margin: 0 auto;
+    align-items: center;
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0; /* Reduzir o espaço interno */
+    }
+
+    .header > div {
+        margin-bottom: 10px; /* Adiciona espaço entre os elementos quando empilhados */
+    }
+
+    .header nav ul {
+        flex-direction: column;
+        text-align: center; /* Centralizar itens do menu */
+    }
+
+    .header nav ul li {
+        margin: 5px 0; /* Espaçamento entre itens do menu */
+    }
+
+    .title_header{
+        margin-bottom: 2rem!important;
+    }
+}

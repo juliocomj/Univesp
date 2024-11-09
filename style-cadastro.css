@@ -1,0 +1,152 @@
+ .principal {
+    min-height: 72vh;
+    padding: 1rem;
+}
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+.central {
+    padding: 2rem;
+}
+
+.form {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: baseline;
+    margin: auto;
+    width: -webkit-fill-available;
+}
+
+.card {
+    margin-top: 2rem;
+    display: flex;
+}
+
+.inline {
+    display: inline-flex;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 16px;
+    padding: 0.5rem;
+}
+
+select {
+    width: fit-content;
+    margin-bottom: 1rem;
+    font-size: 16px;
+    padding: 0.5rem;
+}
+
+input:focus-visible {
+    border-color: #b0d8f0;
+    outline-style: hidden;
+    outline-color: #b0d8f0;
+    outline-offset: 1px;
+    color: gray;
+}
+
+select:focus-visible{
+    border-color: #b0d8f0;
+    outline-style: hidden;
+    outline-color: #b0d8f0;
+    outline-offset: 1px;
+}
+
+.avatar {
+    width: 6rem;
+    height: 5rem;
+    background-color: #f8f8f8;
+    border-radius: 33%;
+    margin: auto;
+}
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    margin-right: 2rem;
+}
+
+.btn_blue{
+    visibility: collapse;
+}
+
+.data{
+    margin-right: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+    .form .inline {
+        grid-template-columns: 1fr;
+    }
+    .central {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .card {
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-top: 20px;
+    }
+    
+    .form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    
+    .form input,
+    .form select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    
+    .form .inline {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 20px;
+    }
+    
+    .form label {
+        font-weight: bold;
+    }
+    
+    .form .avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    .form button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .form button:hover {
+        background-color: #0056b3;
+    }
+}
